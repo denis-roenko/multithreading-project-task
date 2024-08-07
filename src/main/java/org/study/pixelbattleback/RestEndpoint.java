@@ -7,12 +7,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.study.pixelbattleback.dto.PixelRequest;
 import org.study.pixelbattleback.dto.ResultResponse;
+import org.study.pixelbattleback.mapservice.NonBlockingMapService;
 
 @RestController
 public class RestEndpoint {
 
     @Autowired
-    private MapService mapService;
+    private NonBlockingMapService mapService;
 
     /**
      * Окрашивание пикселя в выбранный цвет
